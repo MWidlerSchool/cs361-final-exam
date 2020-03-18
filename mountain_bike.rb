@@ -34,4 +34,8 @@ class MountainBike < AbstractBike
     @hourly_rate
   end
 
+  def equipment_cost
+    luggage.price
+  end
+
 end
