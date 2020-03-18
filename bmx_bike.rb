@@ -22,6 +22,10 @@ class BmxBike < AbstractBike
     @tail_pack
   end
 
+  def equipment_cost
+    return tail_pack.cost
+  end
+
   def weekly_rate
     @weekly_price
   end
