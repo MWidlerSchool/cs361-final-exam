@@ -24,4 +24,12 @@ class RoadBike < AbstractBike
     @daily_rate
   end
 
+  def weekly_rate
+    daily_rate * 7
+  end
+
+  def equipment_cost
+    panniers[0].price + panniers[1].price
+  end
+
 end
